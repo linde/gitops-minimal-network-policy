@@ -18,3 +18,11 @@ spec:
   podSelector: {}
   policyTypes:
   - Ingress
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  namespace: default
+  name: example-configmap
+data:
+  foo: bar
