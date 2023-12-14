@@ -1,5 +1,5 @@
-kind: NamespaceSelector
 apiVersion: configmanagement.gke.io/v1
+kind: NamespaceSelector
 metadata:
   name: fleet-scope-selector
 spec:
@@ -20,10 +20,3 @@ spec:
   policyTypes:
   - Ingress
 ---
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  namespace: default
-  name: example-configmap
-data:
-  foo: bar
